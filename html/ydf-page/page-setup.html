@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>节目管理</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le styles -->
+<link rel="shortcut icon" href="show.ico">
+<link rel="Bookmark" href="show.ico">
+<link rel="stylesheet" type="text/css" href="../../kindeditor/themes/default/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/app.css" />
+<link rel="stylesheet" type="text/css" href="../../css/show.css" />
+<script src="../../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="page-breadcrumb">
+    <ul class="breadcrumb">
+      <li><a href="#">返回我的节目</a> <span class="divider">&gt;</span></li>
+      <li class="active">频道A xxxxx节目装修</li>
+    </ul>
+</div>
+<div class="page-operate-line"></div>
+<div class="app-body">
+	<h1 class="app-tit edit-info">
+    	{{title}}
+        <div class="app-sidebar">
+            <div class="arrow"></div>
+            <div class="app-sidebar-inner js-sidebar-region">
+            	<div class="control-group">
+                	<label class="control-label">网页标题：</label>
+                    <div class="controls"><input type="text" name="title" ng-model="title"></div>
+                </div>
+                <div class="control-group">
+                	<label class="control-label">网页描述：</label>
+                    <div class="controls"><textarea>网页描述</textarea></div>
+                </div>
+            </div>
+        </div>
+        <!--****************/app-sidebar******************-->
+    </h1>
+    <div class="app-logo edit-info">
+        <img style="height:30px;" alt="logo" src="../../images/app/logo.png"/>
+        <div class="app-sidebar">
+            <div class="arrow"></div>
+            <div class="app-sidebar-inner js-sidebar-region">
+            	<h3>LOGO</h3>
+                <div class="control-group">
+                	<div id="logoBox" class="app-logo-box mar-l-35">
+                		<img id="logoImg" style="height:30px;" alt="logo" src="../../images/app/logo.png"/>
+                    </div>
+                    <div class="file-box">
+                    	<input onchange="previewImage(this,'logoBox','logoImg')" type="file"/>
+                    	<a href="#">修改</a>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">连接：</label>
+                    <div class="controls"><input type="text"></div>
+                </div>
+                <input class="app-btn mar-l-35" type="button" value="保存"/>
+            </div>
+        </div>
+        <!--****************/app-sidebar******************-->
+    </div>
+    <div class="app-play edit-info">
+    	<img style="width:100%;" alt="play" src="../../images/app/play.png"/>
+    	<div class="app-sidebar">
+            <div class="arrow"></div>
+            <div class="app-sidebar-inner js-sidebar-region">
+            	<h3>视频背景图</h3>
+                <div class="control-group">
+                	<div id="bgBox" class="app-logo-box">
+                		<img id="bgImg" style="width:280px;" alt="logo" src="../../images/app/play.png"/>
+                    </div>
+                    <div class="file-box">
+                    	<input onchange="previewImage(this,'bgBox','bgImg')" type="file"/>
+                    	<a href="#">修改</a>
+                    </div>
+                </div>
+                <input class="app-btn" type="button" value="保存"/>
+            </div>
+        </div>
+        <!--****************/app-sidebar******************-->
+    </div>
+    <div class="app-textScroll edit-info">
+    	<div class="app-textScroll-box">
+    		<div class="app-textScroll-info">{{tScroll}}</div>
+        </div>
+        <div class="app-sidebar">
+            <div class="arrow"></div>
+            <div class="app-sidebar-inner js-sidebar-region">
+            	<h3>滚动文字</h3>
+                <div class="control-group">
+                    <div class="controls"><input type="text" ng-model="tScroll"></div>
+                </div>
+                <div id="tScrollRadio" class="control-group app-radio-box">
+                    <label><input type="radio" name="textScroll" checked="checked"/>&nbsp;显示</label>
+                    <label><input type="radio" name="textScroll"/>&nbsp;隐藏</label>
+                </div>
+                <input class="app-btn" type="button" value="保存"/>
+            </div>
+        </div>
+        <!--****************/app-sidebar******************-->
+    </div>
+    <div class="app-advertising edit-info">
+        <img style="width:100%;" alt="advertising" src="../../images/app/advertising.png"/>
+        <div class="app-sidebar">
+            <div class="arrow"></div>
+            <div class="app-sidebar-inner js-sidebar-region">
+            	<h3>广告条</h3>
+                <div class="control-group">
+                    <div class="controls"><textarea id="myEditor1" name="myEditor1" runat="server" style="width: 380px; height: 110px;"></textarea></div>
+                </div>
+                <input class="app-btn" type="button" value="保存"/>
+            </div>
+        </div>
+        <!--****************/app-sidebar******************-->
+    </div>
+    <div class="app-menu">
+    	<ul>
+        	<li id="jmhd" class="active edit-info">
+            	节目互动
+            	<div class="app-sidebar left-1">
+                    <div class="arrow"></div>
+                    <div class="app-sidebar-inner js-sidebar-region">
+                        <h3>菜单栏</h3>
+                        <div class="control-group">
+                            <div class="controls">
+                                <label>菜单排列：</label>
+                                <input class="menu-pl" type="text" value="1">
+                            </div>
+                        </div>
+                        <div class="control-group app-cbox-box">
+                            <label><input class="default-cbox" checked="checked" type="checkbox"/>&nbsp;默认显示菜单</label>
+                        </div>
+                        <input id="jmhdBtn" class="app-btn default-btn" type="button" value="保存"/>
+                    </div>
+                </div>
+                <!--****************/app-sidebar******************-->
+            </li>
+            <li id="hdxq" class="edit-info">
+                活动详情
+                <div class="app-sidebar left-2">
+                    <div class="arrow"></div>
+                    <div class="app-sidebar-inner js-sidebar-region">
+                        <h3>菜单栏</h3>
+                        <div class="control-group">
+                            <div class="controls">
+                                <label>菜单排列：</label>
+                                <input class="menu-pl" type="text" value="2">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">网页描述：</label>
+                            <div class="controls"><textarea id="myEditor2" name="myEditor2" runat="server" style="width: 380px; height: 110px;"></textarea></div>
+                        </div>
+                        <div class="control-group app-cbox-box">
+                            <label><input class="default-cbox" type="checkbox"/>&nbsp;默认显示菜单</label>
+                        </div>
+                        <input class="app-btn default-btn" type="button" value="保存"/>
+                    </div>
+                </div>
+                <!--****************/app-sidebar******************-->
+            </li>
+            <li id="zbhz" class="edit-info">
+                直播合作
+                <div class="app-sidebar left-3">
+                    <div class="arrow"></div>
+                    <div class="app-sidebar-inner js-sidebar-region">
+                        <h3>菜单栏</h3>
+                        <div class="control-group">
+                            <div class="controls">
+                                <label>菜单排列：</label>
+                                <input class="menu-pl" type="text" value="3">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">网页描述：</label>
+                            <div class="controls"><textarea id="myEditor3" name="myEditor3" runat="server" style="width: 380px; height: 110px;"></textarea></div>
+                        </div>
+                        <div class="control-group app-cbox-box">
+                            <label><input class="default-cbox" type="checkbox"/>&nbsp;默认显示菜单</label>
+                        </div>
+                        <input class="app-btn default-btn" type="button" value="保存"/>
+                    </div>
+                </div>
+                <!--****************/app-sidebar******************-->
+            </li>
+        </ul>
+    </div>
+    <div class="app-info">
+    	<div class="jmhd-body app-info-body active"><img style="width:100%;" alt="评论信息" src="../../images/app/info.png"/></div>
+    	<div class="hdxq-body app-info-body">活动详情</div>
+        <div class="zbhz-body app-info-body">直播合作</div>
+    </div>
+</div>
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="../../js/textScroll.js"></script> 
+<script type="text/javascript" src="../../kindeditor/kindeditor-min.js"></script> 
+<script type="text/javascript" src="../../js/page/page-setup.js"></script> 
+
+</body>
+</html>

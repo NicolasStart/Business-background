@@ -1,0 +1,284 @@
+$(document).ready(function(e) {
+	//修改显示
+	$(".mub-edit").click(function(){
+		$(this).parent("td").siblings("td").find(".file-name span").hide();
+		var inputVal=$(this).parent("td").siblings("td").find(".file-name span").html();
+		$(this).parent("td").siblings("td").find(".file-name input").show().val(inputVal);
+		$(this).parent("td").siblings("td").find(".edit-save").css("display","inline-block");
+	});
+	$(".list-right").click(function(){
+		$(this).siblings(".file-name").find("input").hide();
+		$(this).css("display","none");
+		$(this).siblings(".list-error").css("display","none");
+		var spanHtml=$(this).siblings(".file-name").find("input").val();
+		$(this).siblings(".file-name").find("span").show().html(spanHtml);
+	});
+	$(".list-error").click(function(){
+		$(this).siblings(".file-name").find("input").hide();
+		$(this).css("display","none");
+		$(this).siblings(".list-right").css("display","none");
+		$(this).siblings(".file-name").find("span").show();
+	});
+	
+	//传值导航显示
+	var menuI=1;
+	$(".jichusj-con > ul.nav-tabs > li:eq("+menuI+") a").tab('show');
+	
+	//cbox样式
+	$("input[type='checkbox'],input[type='radio']").iCheck({
+		checkboxClass: 'icheckbox_square-blue',
+		radioClass: 'iradio_square-blue',
+	});
+	
+	var bv=0;
+	//专题管理设置验证
+	$('.ztglForm').bootstrapValidator({
+        fields: {
+            ztglDcUrl: {
+                validators: {
+                    notEmpty: {
+                        message: '导出文件默认路径不能为空。'
+                    }
+                }
+            },
+			ztglCssFile: {
+                validators: {
+                    notEmpty: {
+                        message: '样式文件不能为空。'
+                    }
+                }
+            },
+			ztglJsFile: {
+                validators: {
+                    notEmpty: {
+                        message: 'js文件不能为空。'
+                    }
+                }
+            },
+			ztglZyFile: {
+                validators: {
+                    notEmpty: {
+                        message: '资源文件不能为空。'
+                    }
+                }
+            },
+			ztglDcFile: {
+                validators: {
+                    notEmpty: {
+                        message: '导出文件格式不能为空。'
+                    }
+                }
+            },
+			ztglSaveMl: {
+                validators: {
+                    notEmpty: {
+                        message: '保存根目录不能为空。'
+                    }
+                }
+            },
+			ztglTimeName: {
+                validators: {
+                    notEmpty: {
+                        message: '保存时间间隔不能为空。'
+                    }
+                }
+            }
+        }
+    }).on('error.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+		bv=1;
+	}).on('success.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+		bv=0;
+	});
+	//母板管理设置验证
+	$('.mbglForm').bootstrapValidator({
+        fields: {
+            mbglDcUrl: {
+                validators: {
+                    notEmpty: {
+                        message: '导出文件默认路径不能为空。'
+                    }
+                }
+            },
+			mbglDcFile: {
+                validators: {
+                    notEmpty: {
+                        message: '导出文件格式不能为空。'
+                    }
+                }
+            }
+        }
+    }).on('error.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+		bv=1;
+	}).on('success.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+		bv=0;
+	});
+	//布局管理设置验证
+	$('.bjglForm').bootstrapValidator({
+        fields: {
+            bjglDcUrl: {
+                validators: {
+                    notEmpty: {
+                        message: '导出文件默认路径不能为空。'
+                    }
+                }
+            },
+			bjglCssFile: {
+                validators: {
+                    notEmpty: {
+                        message: '样式文件不能为空。'
+                    }
+                }
+            },
+			bjglJsFile: {
+                validators: {
+                    notEmpty: {
+                        message: 'js文件不能为空。'
+                    }
+                }
+            },
+			bjglZyFile: {
+                validators: {
+                    notEmpty: {
+                        message: '资源文件不能为空。'
+                    }
+                }
+            },
+			bjglDcFile: {
+                validators: {
+                    notEmpty: {
+                        message: '导出文件格式不能为空。'
+                    }
+                }
+            }
+        }
+    }).on('error.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+		bv=1;
+	}).on('success.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+		bv=0;
+	});
+	//组件管理设置验证
+	$('.zjglForm').bootstrapValidator({
+        fields: {
+            zjglDcUrl: {
+                validators: {
+                    notEmpty: {
+                        message: '导出文件默认路径不能为空。'
+                    }
+                }
+            },
+			zjglCssFile: {
+                validators: {
+                    notEmpty: {
+                        message: '样式文件不能为空。'
+                    }
+                }
+            },
+			zjglJsFile: {
+                validators: {
+                    notEmpty: {
+                        message: 'js文件不能为空。'
+                    }
+                }
+            },
+			zjglZyFile: {
+                validators: {
+                    notEmpty: {
+                        message: '资源文件不能为空。'
+                    }
+                }
+            },
+			zjglDcFile: {
+                validators: {
+                    notEmpty: {
+                        message: '导出文件格式不能为空。'
+                    }
+                }
+            }
+        }
+    }).on('error.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+		bv=1;
+	}).on('success.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+		bv=0;
+	});
+	//风格管理设置验证
+	$('.fgglForm').bootstrapValidator({
+        fields: {
+            fgglDcUrl: {
+                validators: {
+                    notEmpty: {
+                        message: '导出文件默认路径不能为空。'
+                    }
+                }
+            },
+			fgglCssFile: {
+                validators: {
+                    notEmpty: {
+                        message: '样式文件不能为空。'
+                    }
+                }
+            },
+			fgglJsFile: {
+                validators: {
+                    notEmpty: {
+                        message: 'js文件不能为空。'
+                    }
+                }
+            },
+			fgglZyFile: {
+                validators: {
+                    notEmpty: {
+                        message: '资源文件不能为空。'
+                    }
+                }
+            },
+			fgglDcFile: {
+                validators: {
+                    notEmpty: {
+                        message: '导出文件格式不能为空。'
+                    }
+                }
+            }
+        }
+    }).on('error.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+		bv=1;
+	}).on('success.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+		bv=0;
+	});
+	var tabId;
+	$(".jichusj-con .nav-tabs a").click(function (e) {
+		alert(11);
+		e.preventDefault();//阻止a链接的跳转行为
+		if(bv!=0){
+			$("#fangqModal").modal('show');
+			tabId=this;
+		}else{
+			$(this).tab('show');
+		}
+		
+           // $(this).tab('show');//显示当前选中的链接及关联的content 
+	});
+	$("#fangqModal .btn-success").click(function(){
+		$(tabId).tab('show');
+		bv=0;
+	});
+})

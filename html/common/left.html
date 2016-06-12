@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>视秀频道后台</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le styles -->
+<link rel="shortcut icon" href="show.ico">
+<link rel="Bookmark" href="show.ico">
+<link rel="stylesheet" type="text/css" href="../css/leftmenu.css" />
+<link rel="stylesheet" type="text/css" href="../css/show.css" />
+</head>
+
+<body>
+
+<!--============================left=======================-->
+<!--main nav--> 
+  <!--===================================================-->
+      <div class="mainnav-container">
+        <div class="page-logo">
+            <i class="logo"></i><i class="logo-font"></i>
+        </div>
+        <div class="mainnav"> 
+            <ul>
+              <li class="active">
+                  <a class="menuPopover" href="javascript:void(0);" _href="syg-page/channel.html" data-placement="right" data-toggle="popover" title="">
+                      <i class="navicon pd"></i>
+                      <span class="menu-title">频道</span>
+                  </a> 
+              </li>
+              <li>
+                  <a class="menuPopover" href="javascript:void(0);" _href="syg-page/program.html" data-placement="right" data-toggle="popover" title=" ">
+                      <i class="navicon jmgl"></i>
+                      <span class="menu-title">节目管理</span>
+                  </a> 
+              </li>
+              <li>
+                  <a class="menuPopover" href="javascript:void(0);" _href="syg-page/account.html" data-placement="right" data-toggle="popover" title=" ">
+                      <i class="navicon zhzx"></i>
+                      <span class="menu-title">账户中心</span>
+                  </a> 
+              </li>
+              <li>
+                  <a class="menuPopover" href="javascript:void(0);" _href="syg-page/channel.html" data-placement="right" data-toggle="popover" title=" ">
+                      <i class="navicon scgl"></i>
+                      <span class="menu-title">商城管理</span>
+                  </a> 
+              </li>
+            </ul>
+          
+        </div>
+      </div>
+  <!--===================================================--> 
+  <!--end main nav--> 
+<!--============================left=======================-->
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="../js/leftmenu.js"></script>
+<script type="text/javascript">
+    $(".mainnav li .menuPopover").click(function(){
+        $("#conPage").attr("src",$(this).attr("_href"));
+        $(".mainnav li").removeClass("active");
+        $(this).parent("li").addClass("active");
+    });
+</script>
+
+</body>
+</html>

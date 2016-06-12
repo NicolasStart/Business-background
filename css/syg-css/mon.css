@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+.logo{ width:100%; height:106px; background:#fff; margin:0 auto;  }
+.logo .logo_b{ width:500px; height:62px; margin-left:10%; margin-top:1%;  }
+.logo_b .logo_bg{ width:121px; height:62px; background:url(../img/logo.png) no-repeat; text-indent:-888em; }
+.logo .logo_r{ width:170px; height:62px; border-left:1px solid #ccc; color:#000; font-size:30px; margin-left:16px; text-align:center; line-height:62px; font-family:'微软雅黑'; }
+
+.nav{ width:100%; height:294px; background:#4d5562; margin:0 auto; }
+.nav ul{ width:1200px; height:294px; margin:0 auto; }
+.nav ul li{ width:300px; height:294px; float:left; text-align:center; }
+.nav ul .on{ width:300px; height:294px; background:#5b626e; }
+.nav ul li img{ margin-top:60px; }
+.nav ul li p{ font-size:30px; margin-top:18px; font-family:'微软雅黑';}
+
+
+.con{ width:100%; background:#efecec; margin:0 auto; height:1500px; }
+.con_c{ width:1200px; height:90px; border-bottom:1px solid #999; line-height:90px;  margin:0 auto; }
+.con_c a{ color:#e56767; font-size:18px; font-family:'微软雅黑'; }
+.con_c .img{ width:30px; height:27px; margin-top:26px; }
+
+
+.sen{ width:1200px; height:700px; margin:0 auto; } 
+.sen .l{ width:594px; height:700px; background:#fff; margin-top:30px; }
+.sen .l .to { width:594px; height:50px; }
+.sen .l .to .bo{ width:110px; height:40px; background:#e56767; color:#fff; text-align:center; line-height:40px; font-size:18px; border-radius:0 18px 18px 0; font-family:'微软雅黑';}
+.sen .l .to .break{ width:130px; height:20px; color:#666; font-size:14px; padding-top:12px; }
+.sen .l .video{ width:594px; height:430px; background:#f5f4f4; }
+.sen .l .video .piao{ width:594px; height:54px; }
+.sen .l .video .piao .pas{ font-size:20px; color:#333; padding-top:18px; font-weight:bold; padding-left:10px; }
+.sen .l .video .piao .num{ font-size:14px; color:#333; padding-top:26px; padding-right:20px; }
+.sen .l .video .piao .num img{ margin-top:-10px; }
+.sen .l .video .img3{ padding-left:10px; }
+.sen .l .foot{ width:594px; height:154px;  text-align:center; margin-top:26px; }
+.sen .l .foot .add{ font-size:16px; color:#666; padding-left:40px; padding-top:70px; }
+.sen .l .foot .er{ width:136px; height:154px; font-size:13px; color:#666; }
+.sen .l .foot .conn{ width:148px; height:38px; text-align:center; line-height:38px;  border-radius:20px;  background:#e56767; margin-left:20px; margin-top:60px;  }
+.sen .l .foot .conn a{ color:#fff; font-size:14px; font-family:'微软雅黑'; }
+
+
+.sen .r{ width:594px; height:700px; background:#fff; margin-left:12px; margin-top:30px; }
+.sen .r .rt{ width:594px; height:100px; }
+.sen .r .rt .talk{ width:110px; height:40px; background:#e56767; text-align:center; line-height:40px; color:#fff; font-size:18px; font-family:'微软雅黑'; border-radius:0 18px 18px 0 ;}
+.sen .r .rt .mine{ width:130px; height:30px; color:#333; font-size:16px; padding-top:16px; padding-right:20px; font-family:'微软雅黑';}
+.sen .r .rt .com{ width:100px; height:30px; padding-top:30px;  }
+.sen .r .cont{ width:594px; height:534px; background:#f6f6f6; }
+.sen .r .cont .por{ width:100px; height:86px; }
+.sen .r .cont .por img{ padding-left:20px; padding-top:12px; }
+.sen .r .cont .list{ width:494px; height:88px; border-bottom:1px solid #ccc; }
+.sen .r .cont .list .top{ width:490px; height:22px; color:#999; font-size:14px; margin-top:20px; }
+.sen .r .cont .list .center{ width:490px; height:28px; color:#999; font-size:16px; margin-top:12px; }
+.sen .r .cont .list .center span{ color:#333; }
+.sen .r .cont .list .center a{ width:54px; height:22px; background:#eee; border-radius:10px; display:block; float:left; margin-right:10px; text-align:center; line-height:22px; color:#999;  }
+
+
+.sen .r .ul{ width:594px; height:60px; margin:0 auto; padding-left:20px;}
+.sen .r .ul li{ width:60px; height:26px; color:#ccc; text-align:center; line-height:26px; font-size:16px; float:left; border:1px solid #ccc; margin-left:10px; margin-top:20px; font-family:'微软雅黑';}
+.sen .r .ul .num{ width:30px; height:26px; background:#e56767; color:#fff; }
+.sen .r .ul .nub{ width:30px; height:26px; margin-left:-6px; }
+.sen .r .ul .dian{ border:none; margin-left:-6px; }
+.sen .r .ul .retun{ width:120px; height:26px; border:none; }
+.sen .r .ul .retun span{ margin-top:5px; }
+.sen .r .ul .retun input{ width:30px; height:26px; border:1px solid #ccc; }
+.sen .r .ul .sure{ width:60px; height:26px; background:#e56767; color:#fff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

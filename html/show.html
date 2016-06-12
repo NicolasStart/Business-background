@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>视秀频道后台</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le styles -->
+<link rel="shortcut icon" href="show.ico">
+<link rel="Bookmark" href="show.ico">
+<link rel="stylesheet" type="text/css" href="../css/leftmenu.css" />
+<link rel="stylesheet" type="text/css" href="../css/show.css" />
+</head>
+
+<body>
+<p id="backToTop" style="display:none;">
+    <a title="回到顶部" href="javascript:void(0);">
+        <img src="../images/common/top-hover.png"/>
+        <img class="top-img" src="../images/common/top.png"/>
+    </a>
+</p>
+<div id="container" class="page-container effect mainnav-lg">
+<!--============================left=======================-->
+<!--main nav--> 
+  <!--===================================================-->
+      <div class="mainnav-container">
+        <div class="page-logo">
+            <i class="logo"></i><i class="logo-font"></i>
+        </div>
+        <div class="mainnav"> 
+            <ul>
+              <li class="active">
+                  <a class="menuPopover" href="javascript:void(0);" _href="syg-page/channel.html" data-placement="right" data-toggle="popover" title="">
+                      <i class="navicon pd"></i>
+                      <span class="menu-title">频道</span>
+                  </a> 
+              </li>
+              <li>
+                  <a class="menuPopover" href="javascript:void(0);" _href="syg-page/program.html" data-placement="right" data-toggle="popover" title=" ">
+                      <i class="navicon jmgl"></i>
+                      <span class="menu-title">节目管理</span>
+                  </a> 
+              </li>
+              <li>
+                  <a class="menuPopover" href="javascript:void(0);" _href="syg-page/account.html" data-placement="right" data-toggle="popover" title=" ">
+                      <i class="navicon zhzx"></i>
+                      <span class="menu-title">账户中心</span>
+                  </a> 
+              </li>
+              <li>
+                  <a class="menuPopover" href="javascript:void(0);" _href="ydf-page/page-manage.html" data-placement="right" data-toggle="popover" title=" ">
+                      <i class="navicon scgl"></i>
+                      <span class="menu-title">商城管理</span>
+                  </a> 
+              </li>
+            </ul>
+          
+        </div>
+      </div>
+  <!--===================================================--> 
+  <!--end main nav--> 
+<!--============================left=======================-->
+	<!--============================right=======================-->
+    <div class="content-container">
+        <div class="page-container-wrap">
+            <div class="page-con">
+                <iframe id="conPage" src="syg-page/channel.html" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" width="100%" height="1200" ></iframe>
+            </div>
+            <div class="footer-wrap">
+                <iframe src="common/footer.html" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" width="100%" height="301"></iframe>
+            </div>
+        </div>
+        <!---/page-main-->
+    </div>
+	<!--============================/right=======================-->
+</div>
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="../js/leftmenu.js"></script>
+<script type="text/javascript">
+    /*===============回顶部===============*/
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $("#backToTop").fadeIn(500);
+        } else {
+            $("#backToTop").fadeOut(500);
+        }
+    });
+    $("#backToTop").click(function () {
+        $('body,html').animate({scrollTop: 0}, 600);
+        return false;
+    });
+    $(".mainnav li .menuPopover").click(function(){
+        $("#conPage").attr("src",$(this).attr("_href"));
+        $(".mainnav li").removeClass("active");
+        $(this).parent("li").addClass("active");
+    });
+</script>
+
+</body>
+</html>

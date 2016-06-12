@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+.logo{ width:100%; height:106px; background:#fff; margin:0 auto;  }
+.logo .logo_b{ width:500px; height:62px; margin-left:10%; margin-top:1%;  }
+.logo_b .logo_bg{ width:121px; height:62px; background:url(../img/logo.png) no-repeat; text-indent:-888em; }
+.logo .logo_r{ width:170px; height:62px; border-left:1px solid #ccc; color:#000; font-size:30px; margin-left:16px; text-align:center; line-height:62px; font-family:'微软雅黑'; }
+
+.nav{ width:100%; height:294px; background:#4d5562; margin:0 auto; }
+.nav ul{ width:1200px; height:294px; margin:0 auto; }
+.nav ul li{ width:300px; height:294px; float:left; text-align:center; }
+.nav ul .on{ width:300px; height:294px; background:#5b626e; }
+.nav ul li img{ margin-top:60px; }
+.nav ul li p{ font-size:30px; margin-top:18px; font-family:'微软雅黑';}
+
+
+.con{ width:100%; background:#efecec; margin:0 auto; }
+.con_c{ width:1200px; height:90px; border-bottom:1px solid #999; line-height:90px;  margin:0 auto; }
+.con_c a{ color:#e56767; font-size:18px; font-family:'微软雅黑'; }
+.con_c img{ width:30px; height:27px; margin-top:26px; }
+
+
+.foot{ width:1200px; height:1950px; background:#efecec; margin:0 auto; }
+.foot .l{ width:200px; height:1600px; margin-top:36px;}
+.foot .l ul{  margin-bottom:30px; margin-left:30px;}
+.foot .l ul .a{ color:#e56767; font-size:24px; font-family:'微软雅黑';}
+.foot .l .on img{ width:26px; height:20px; margin-left:-40px; }
+.foot .l ul li{ color:#535246; font-size:20px; font-family:'微软雅黑'; margin-top:20px; }
+.foot .r{ width:940px; height:1050px; background:#fff; margin-top:36px; }
+.foot .r .tp{ width:940px; height:360px;}
+.foot .r .cj{ width:110px; height:40px; background:#e56767; border-radius:0 18px 18px 0; text-align:center;  margin-top:16px; }
+.foot .r .cj a{ font-family:'微软雅黑'; color:#fff; font-size:17px; line-height:40px; }
+.foot .r .cont{ width:460px; height:240px; }
+.foot .r .cont p{  width:400px; height:32px;  font-size:18px; color:#333;  font-family:'微软雅黑'; margin-left:60px; margin-top:60px; }
+.foot .r .cont .pi{  width:212px; height:110px; margin-left:80px; margin-top:60px; }
+.foot .r .cont p .pas { width:280px; height:28px; font-size:14px; }
+.foot .r .cont .pt{ width:400px; height:60px; margin-left:150px; margin-top:60px; }
+.foot .r .cont .pt .bt{ width:90px; height:30px; border-radius:12px; border:1px solid #e56f6f; text-align:center; margin-left:170px; margin-top:-117px; }
+.foot .r .cont .text{ width:90px; height:30px; border-radius:12px; border:1px solid #e56f6f; text-align:center; }
+.foot .r .cont .text a{ color:#e56f6f; font-size:18px; line-height:30px; }
+.foot .r .cont .but{ width:76px; height:28px; background:#e56f6f; color:#fff; border:none; border-radius:10px; margin-left:30px; font-size:16px; font-family:'微软雅黑';}
+.foot .r .rp{ width:274px; height:246px; margin-left:90px; margin-top:12px; display:none; }
+.foot .r .rp img{ width:100%; height:100%; }
+.foot .r .cont_f{ width:940px; height:360px; }
+.foot .r .rt{ width:274px; height:246px; margin-left:0px; margin-top:12px; display:none; }
+.foot .r .rt img{ width:100%; height:100%; }
+.foot .r .cont_l{ width:480px; height:180px; margin-left:84px; margin-top:40px;  }
+.foot .r .cont_l .cont_p{ font-size:16px; color:#999; margin-left:10px; }
+.foot .r .cont_l .cont_p a{ width:90px; height:30px; border-radius:12px; border:1px solid #e56f6f; text-align:center; display:block; line-height:30px; color:#e56767; margin-top:20px; }
+.foot .r .buut{ width:76px; height:28px; background:#e56f6f; color:#fff; border:none; border-radius:10px; font-size:16px; font-family:'微软雅黑'; margin-top:3px; margin-left:30px; }
+
+.box{ width:940px; height:1500px; background:#fff; margin:0 auto;  }
+.box_c{ width:940px; height:60px; }
+.box_c .dis{ width:110px; height:40px; background:#e56767; border-radius:0 18px 18px 0; text-align:center; line-height:40px; }
+.box_c .dis a{ color:#fff; font-size:17px;  font-family:'微软雅黑'; }
+.box1 { width:800px; }
+.box1 .sh{ color:#333; font-size:16px; margin-left:100px; margin-top:50px; }
+.box1 .mon{ width:400px; height:40px; color:#666; font-size:16px; margin-left:140px; margin-top:20px; }
+.box1 .mon .input1{ width:84px; height:26px; }
+.box1 .box2{ width:520px; height:88px; margin-left:140px; margin-top:20px; }
+.box1 .box2 .btt{width:240px; height:88px;  margin-left:20px; }
+.box1 .box2 .btt .bl{ color:#999; font-size:13px; }
+.box1 .box2 .btt .button{ width:76px; height:30px; background:#e56767; text-align:center; line-height:30px; color:#fff; font-size:16px; font-family:'微软雅黑'; border-radius:10px; margin-top:30px; border:none; margin-left:10px; }
+.box1 .box2 .share{ width:800px; height:60px;  }
+.box .share .fir{ width:800px; height:60px; text-align:center;  color:#999; font-family:'微软雅黑'; font-size:17px; margin-top:50px; margin-left:140px; }
+.box .share .fir .ba{ width:146px; height:26px; border:1px solid #ccc; text-align:center; line-height:26px; color:#666; font-size:14px; margin-top:-3px; }
+.box .list{ width:790px; height:106px; border:1px solid #ccc; margin-left:140px; border-right:0; }
+.box .list ul li{ text-align:center; }
+.box .list ul{  height:106px; border-right:1px solid #ccc; }
+.box .list .ul1{ width:68px;}
+.box .list .ul2{ width:94px;}
+.box .list .ul3{ width:70px;}
+.box .list .ul4{ width:116px;}
+.box .list .ul5{ width:78px;}
+.box .list .ul6{ width:80px;}
+.box .list .ul7{ width:80px;}
+.box .list .ul8{ width:64px;}
+.box .list .ul9{ width:64px;}
+.box .list .ul10{ width:66px;}
+.box .list .li1{ height:40px; background:#e56767; line-height:40px; color:#fff; font-size:14px;  }
+.box .list .li11{ height:66px;  line-height:66px;  font-size:15px;}
+.box .list .ul7 .li11{ color:#e56767; }
+.box .list .ul8 .li11{ color:#72c99c; }
+.box .list .ul9 .li9 a{ width:50px; height:22px; background:#fd734f; color:#fff; font-size:14px; margin-top:20px; border-radius:10px; display:block; line-height:22px; margin-left:6px; }
+.box .list .ul10 .li10 a{ width:50px; height:22px; background:#c9c9c5; color:#fff; font-size:14px; margin-top:20px; border-radius:10px; display:block; line-height:22px; margin-left:6px; }
+
+.box .list .ul3 .li11 img{ width:50px; height:50px; border-radius:50%; margin-top:10px; }
+.box .list .ul4 .li11 div p{ font-size:7px; color:#999; }
+.box .list .ul4 .li11 div img{ width:79px; height:26px; margin-top:20px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

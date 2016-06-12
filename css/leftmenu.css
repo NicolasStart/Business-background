@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+.mainnav-container{ background:#2f4050; font-size:14px; color:#a7b1c2; font-family:'微软雅黑'; width:170px; transition-property: width,padding,left,right; transition-duration: .35s; position:fixed; top:0px; left:0px; min-height:340px; height:100%; z-index:4;}
+.page-logo{ height:61px; background:#1a2229; border-bottom:1px solid #2f4050;}
+.page-logo .logo{ background:url(../images/common/logo.png) 0 0 no-repeat; width:60px; height:21px; display:inline-block; margin:19px 0px 0px 12px;-webkit-transition: opacity .5s,padding .5s linear .5s,color .1s,margin .5s linear .5s;
+		transition: opacity .5s,padding .5s linear .5s,color .1s,margin .5s linear .5s;
+		transition-timing-function: cubic-bezier(0.28,1.02,0.36,1.145);}
+.page-logo .logo-font{ background:url(../images/common/logo.png) -60px 0 no-repeat; width:87px; height:21px; display:inline-block;}
+.mainnav ul{ padding:0px; margin:0px;}
+.mainnav ul li{ list-style:none; font-size:14px; color:#a7b1c2; font-family:'微软雅黑'; border-left:4px solid #2f4050; margin:0px 0px 4px 0px;}
+.mainnav ul li.active,.mainnav ul li:hover{ border-left:4px solid #00acac; background:#212d38; color:#ffffff;-webkit-transition: background-color .5s, border .5s, color .5s,box-shadow .5s;
+		transition: background-color .5s, border .5s,color .5s,box-shadow .5s;}
+.mainnav ul li a{ padding:14px 0px 14px 13px; display:block; height:23px; font-size:14px; color:#a7b1c2; font-family:'微软雅黑'; white-space: nowrap;}
+.mainnav ul li a:hover, .mainnav ul li a:hover span, .mainnav ul li.active a span{ text-decoration:none; color:#fff;}
+.mainnav ul li a span{ font-size:14px; color:#a7b1c2; font-family:'微软雅黑'; float:left;}
+
+.navicon{ background-image:url(../images/common/menu-icon.png); background-repeat:no-repeat; background-position:0 0; width:41px; height:31px; display:inline-block; vertical-align:middle; margin-right:29px; float:left;}
+.mainnav ul li.active .navicon,.mainnav ul li:hover .navicon{ background-image:url(../images/common/menu-icon.png);}
+.navicon.pd{ background-position:0 0;}
+.navicon.jmgl{ background-position:0 -45px;}
+.navicon.zhzx{ background-position:0 -92px;}
+.navicon.scgl{ background-position:0 -141px;}
+.mainnav .lock{ background-image:url(../images/common/lock.png); background-repeat:no-repeat; background-position:0 0; width:14px; height:14px; display:inline-block; vertical-align:middle; float:right; margin:6px 14px 0 0;}
+.mainnav .lock.lock-open{ background-position:0 0;}
+.mainnav .lock.lock-close{ background-position:-20px 0;}
+
+
+/*-------------------mainnav-lg-----------------*/
+.logo-font, .menu-title, .lock{
+		position: relative;
+		white-space: nowrap;
+		opacity: 1;
+		filter:alpha(opacity=100);
+		-webkit-transition: all 1.5s ease .3s,color .3s;
+		transition: all 1.5s ease .3s,color .3s;
+		transition-timing-function: cubic-bezier(0.28,1.02,0.36,1.145)
+	}
+
+	
+	
+/*-------------------mainnav-sm-----------------*/
+.mainnav-sm .mainnav-container{ width:70px;}
+.mainnav-sm .page-logo .logo{ margin:14px 0 0 7px;}
+.mainnav-sm .logo-font, .mainnav-sm .menu-title, .mainnav-sm .lock{
+		opacity: 0;
+		filter:alpha(opacity=0);
+		height:0px; width:0px;
+		-webkit-transition: opacity .5s,padding .5s linear .5s,color .1s,margin .5s linear .5s;
+		transition: opacity .5s,padding .5s linear .5s,color .1s,margin .5s linear .5s;
+		transition-timing-function: cubic-bezier(0.28,1.02,0.36,1.145);
+	}
+
+
+.mainnav-sm .mainnav ul li.active,.mainnav-sm .mainnav ul li:hover{ background:#00acac;}
+.mainnav-sm .mainnav ul li > a{ width:33px; margin:0px; overflow:hidden;}
+.mainnav-sm .popover .arrow{ display:none;}
+
+.mainnav-sm .popover {
+	margin:0px;
+  max-width: 276px;
+  padding: 0px;
+  text-align: left;
+  white-space: normal;
+  background-color: #2f4050;
+  border: 0px solid #2f4050;
+  border: 0px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+.mainnav-sm .popover .popover-title{ display:none;}
+.mainnav-sm .popover .popover-content{ padding:0px; width:119px;}
+.mainnav-sm .popover a{ padding:14px 0 14px 20px;}
+.mainnav-sm .popover .menu-title{ opacity:1; filter:alpha(opacity=100); color:#fff; height:23px; width:auto; display:block; float:left;}
+.mainnav-sm .popover .lock{ opacity:1; filter:alpha(opacity=100); width:14px; height:14px; float:right; margin:6px 9px 0 0;}
+/*-------------------left-sub---------------------*/

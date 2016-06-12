@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>视秀频道后台</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le styles -->
+<link rel="shortcut icon" href="show.ico">
+<link rel="Bookmark" href="show.ico">
+<link rel="stylesheet" type="text/css" href="../css/show.css" />
+</head>
+
+<body>
+<p id="backToTop" style="display:none;">
+    <a title="回到顶部" href="javascript:void(0);">
+        <img src="../images/common/top-hover.png"/>
+        <img class="top-img" src="../images/common/top.png"/>
+    </a>
+</p>
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript">
+    /*===============回顶部===============*/
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $("#backToTop").fadeIn(500);
+        } else {
+            $("#backToTop").fadeOut(500);
+        }
+    });
+    $("#backToTop").click(function () {
+        $('body,html').animate({scrollTop: 0}, 600);
+        return false;
+    });
+</script>
+
+</body>
+</html>
